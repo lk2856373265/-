@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <router-view/>
   </div>
 </template>
 
@@ -8,9 +7,16 @@
 export default {
   name: 'App',
   data () {
-    return {}
+    return {
+      radio: '1',
+      show: false
+    }
   },
-  components: {}
+  methods: {
+    showPopup () {
+      this.show = true
+    }
+  }
 }
 </script>
 
